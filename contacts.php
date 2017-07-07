@@ -1,3 +1,39 @@
+<?php
+
+//include 'config.php';
+$config = [
+        'to' => 'sss@ukr.net',
+    'name' => 'Olga'
+];
+
+var_dump($_POST);
+
+$post = $_POST;
+$html_message = '';
+
+if (!empty($post)) {
+
+    $name = $post[name];
+    $email = $post[email];
+    $message = $post[message];
+
+    if ((is_string($name) && $name != '') &&
+    (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) &&
+    ($text != '' ))
+
+       $result =  mail(config['email']['to'],$name, $message);
+
+        if ($result){
+            $html_message = 'ok';
+        }
+        else {
+            $html_message = 'error';
+        }
+
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="ru">
 
@@ -66,7 +102,7 @@
 							<li><a href="index.html">Главная</a></li>
 							<li><a href="about">Обо мне</a></li>
 							<li><a href="portfolio">Портфолио</a></li>
-							<li><a href="contacts">Контакты</a></li>				
+							<li><a href="contacts.php">Контакты</a></li>
 						</ul>
 					</nav>
 
@@ -89,25 +125,25 @@
 
 
 										<div class="col-xs-12 text-center">
-											<form name="sentMessage" id="contactForm" novalidate>
+											<form name="sentMessage2" id="contactForm2" novalidate method="post" action="contacts.php">
 												<div class="row">
 													<div class="col-md-6">
 														<div class="form-group">
-															<input type="text" class="form-control" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name.">
+															<input name="name" type="text" class="form-control" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name.">
 															<p class="help-block text-danger"></p>
 														</div>
 														<div class="form-group">
-															<input type="email" class="form-control" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address.">
+															<input name="email" type="email" class="form-control" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address.">
 															<p class="help-block text-danger"></p>
 														</div>
 														<div class="form-group">
-															<input type="tel" class="form-control" placeholder="Your Phone *" id="phone" required data-validation-required-message="Please enter your phone number.">
+															<input name="phone" type="tel" class="form-control" placeholder="Your Phone *" id="phone" required data-validation-required-message="Please enter your phone number.">
 															<p class="help-block text-danger"></p>
 														</div>
 													</div>
 													<div class="col-md-6">
 														<div class="form-group">
-															<textarea class="form-control" placeholder="Your Message *" id="message" required data-validation-required-message="Please enter a message."></textarea>
+															<textarea name="message" class="form-control" placeholder="Your Message *" id="message" required data-validation-required-message="Please enter a message."></textarea>
 															<p class="help-block text-danger"></p>
 														</div>
 													</div>
@@ -145,11 +181,16 @@
 				footer
 			</div>
 		</div>
-
+    <link rel="stylesheet" href="css/main.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" type="text/javascript"></script>
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
-		<link rel="stylesheet" href="css/main.min.css">
+
 		<script src="js/scripts.min.js"></script>
+
+
+
+
+
 
 	</body>
 	</html>
