@@ -1,36 +1,42 @@
 <?php
 
-//include 'config.php';
-$config = [
-        'to' => 'sss@ukr.net',
-    'name' => 'Olga'
-];
+	include 'config.php';
 
-var_dump($_POST);
+	// $config = [
+	// 	'to' 	=> 'olya_klim@ukr.net',
+	// 	'name' 	=> 'Olga'
+	// ];
 
-$post = $_POST;
-$html_message = '';
+	// var_dump($_POST);
 
-if (!empty($post)) {
+	$post = $_POST;
+	$html_message = '';
 
-    $name = $post[name];
-    $email = $post[email];
-    $message = $post[message];
+	if (!empty($post)) {
 
-    if ((is_string($name) && $name != '') &&
-    (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) &&
-    ($text != '' ))
+		$name = $post['name'];
+		$email = $post['email'];
+		$message = $post['message'];
 
-       $result =  mail(config['email']['to'],$name, $message);
+		if ((is_string($name) && $name !== '') &&
+			(filter_var($email, FILTER_VALIDATE_EMAIL)) &&
+			($message != '' )) {
 
-        if ($result){
-            $html_message = 'ok';
-        }
-        else {
-            $html_message = 'error';
-        }
+	  		// $headers  = "Content-type: text/html; charset=windows-1251 \r\n"; 
+			// $headers .= "From: Birthday Reminder <birthday@example.com>\r\n"; 
+			// $headers .= "Bcc: birthday-archive@example.com\r\n"; 
 
-}
+			$result = mail($config['to'],$name, $message);
+	}
+
+	if ($result){
+		$html_message = ' Сообщение отправлено!';
+	}
+	else {
+		$html_message = ' Ошибка отправки!';
+	}
+
+	}
 
 ?>
 
@@ -82,7 +88,7 @@ if (!empty($post)) {
 
 				<div class="top-line">
 
-					<a href="index.html" class="logo">
+					<a href="index.php" class="logo">
 						<img src="img/logo_1.png" alt="logo">
 					</a>
 
@@ -99,7 +105,7 @@ if (!empty($post)) {
 
 					<nav id="my-menu">
 						<ul>
-							<li><a href="index.html">Главная</a></li>
+							<li><a href="index.php">Главная</a></li>
 							<li><a href="about">Обо мне</a></li>
 							<li><a href="portfolio">Портфолио</a></li>
 							<li><a href="contacts.php">Контакты</a></li>
@@ -125,6 +131,11 @@ if (!empty($post)) {
 
 
 										<div class="col-xs-12 text-center">
+
+
+
+
+
 											<form name="sentMessage2" id="contactForm2" novalidate method="post" action="contacts.php">
 												<div class="row">
 													<div class="col-md-6">
@@ -188,6 +199,10 @@ if (!empty($post)) {
 		<script src="js/scripts.min.js"></script>
 
 
+	<script>
+		$('#success').html('<?php echo $html_message; ?>');
+		$('#success').show();
+	</script>
 
 
 
