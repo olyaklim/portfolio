@@ -85,8 +85,9 @@
 						<div class="col-lg-10 col-lg-offset-1 text-center">
 							<h2>My HomeWork</h2>
 							<hr class="small">
-							<div class="row">
-								<div class="col-md-6">
+							<div id="smartPortfolio" class="row">
+
+								<div class="col-md-6 ourWork">
 									<div class="portfolio-item">
 										<a href="/parser_img">
 											<span>Парсер картинок</span>
@@ -109,7 +110,8 @@
 										</a>
 									</div>
 								</div>
-								<div class="col-md-6">
+
+								<div class="col-md-6 ourWork">
 									<div class="portfolio-item">
 										<a href="/converter-valut">
 											<span>Конвертер валют</span>
@@ -132,7 +134,8 @@
 										</a>
 									</div>
 								</div>
-								<div class="col-md-6">
+
+								<div class="col-md-6 ourWork">
 									<div class="portfolio-item">
 										<a href="/calculate">
 											<span>Калькулятор</span>
@@ -154,7 +157,8 @@
 										</a>
 									</div>
 								</div>
-								<div class="col-md-6">
+
+								<div class="col-md-6 ourWork">
 									<div class="portfolio-item">
 										<a href="/masiv">
 											<span>Массивы</span>
@@ -178,32 +182,23 @@
 										</a>
 									</div>
 								</div>
-								<div class="col-md-6">
-									<div class="portfolio-item">
-										<a href="/tour">
-											<span>Подбор тура</span>
-											<div class="block-img">
-												<img class="img-portfolio img-responsive" src="img/portfolio-4.jpg">
+
+							</div>
 
 
-												<div class="magnifier">
-													<div class="buttons">
-														<a class="st" rel="bookmark" href="https://github.com/olyaklim/egypt">
-															<i class="fa fa-github livicon shadowed" aria-hidden="true"></i>
-														</a>
+							<div class="row">
+									<div class="col-xs-12 text-center">
+										<div id="moreButton" onclick="lazyload.load()">
+											<span>Показать еще.....</span>
+										</div>
 
-														<a class="st" rel="bookmark" href="/tour">
-															<i class="fa fa-play livicon shadowed" aria-hidden="true"></i>
-														</a>
-													</div><!-- end buttons -->
-
-												</div>	
-											</div>
-
-										</a>
+										<div id="loadingDiv">
+											<span>Загрузка данных</span>
+										</div>
 									</div>
 								</div>
-							</div>
+
+								
 							<!-- /.row (nested) -->
 							<!-- <a href="#" class="btn btn-dark">View More Items</a> -->
 						</div>
@@ -232,6 +227,7 @@
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="css/main.min.css">
 	<script src="js/scripts.min.js"></script>
+	<script type="text/javascript" src="js/lazyload.js"></script>
 
 </body>
 </html>
