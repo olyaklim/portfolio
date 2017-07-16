@@ -2,12 +2,6 @@
 
 	include 'config.php';
 
-	// $config = [
-	// 	'to' 	=> 'olya_klim@ukr.net',
-	// 	'name' 	=> 'Olga'
-	// ];
-
-	// var_dump($_POST);
 
 	$post = $_POST;
 	$html_message = '';
@@ -125,8 +119,8 @@
 									<div class="row">
 
 										<div class="col-xs-12 text-center">
-											<h2 class="section-heading">Contact Us</h2>
-											<h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+											<h2 class="section-heading">Отправить заявку</h2>
+											<h3 class="section-subheading text-muted">Введите данные для отправки</h3>
 										</div>
 
 
@@ -167,21 +161,13 @@
 												</div>
 											</form>
 										</div>
-
-
 									</div>
 								</div>
 							</div>
-
-
-
-
 							
 						</div>
 					</div>
-
 				</header>
-
 			</div>
 
 			<div id="my-content">
@@ -189,7 +175,7 @@
 			</div>
 
 			<div id="my-footer">
-				footer
+				<p class="text-muted">Copyright &copy; 2016</p>
 			</div>
 		</div>
     <link rel="stylesheet" href="css/main.min.css">

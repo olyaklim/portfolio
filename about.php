@@ -83,10 +83,15 @@
 								<div class="container">
 									<div class="row">
 										<div class="col-lg-12 text-center">
-											<h2 class="section-heading">Our Amazing Team</h2>
-											<h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+											<h2 class="section-heading">Junior PHP developer</h2>
+											<h2 class="section-subheading text-muted"><b>Шевченко Ольга Владимировна</b></h2>
+											<h2>ссылка на git: https://github.com/olyaklim</h2>
+											<h2>e-mail: olya_klim@ukr.net</h2>
 										</div>
 									</div>
+
+
+									<?php /*
 									<div class="row">
 
 										<div class="col-sm-12">
@@ -110,6 +115,9 @@
 											<p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
 										</div>
 									</div>
+									*/ ?>
+
+
 								</div>
 							</section>
 
@@ -132,7 +140,7 @@
 		</div>
 
 		<div id="my-footer">
-			footer
+			<p class="text-muted">Copyright &copy; 2016</p>
 		</div>
 	</div>
 

@@ -54,7 +54,7 @@
 
 					<div class="phone">
 						<i class="fa fa-mobile" aria-hidden="true"></i>
-						+38(063) 95-70-712
+						+38(063) 95-90-719
 					</div>		
 
 					<a href="#my-menu" class="hamburger hamburger--emphatic">
@@ -83,11 +83,11 @@
 										
 										<div class="welcome">
 											<p><span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></p>
-											<h1 class="h1">Lorem</h1>
+											<h1 class="h1">Курс PHP</h1>
 											
 										</div>
 
-										<p><strong>Lorem</strong> ipsum dolor sit amet, consectetur adipisicing elit. Ipsa nam, vel nihil nobis nulla maxime porro praesentium eaque? Harum qui, omnis rerum debitis iure tempore cupiditate rem nesciunt obcaecati aperiam.</p>
+										<p><strong>Мои работы </strong>Компьютерная школа Hillel</p>
 
 										<a href="#" class="button">Отправить заявку</a>	
 
@@ -103,7 +103,7 @@
 		</div>
 
 
-
+ <?php /*
 
     <!-- Map -->
     <section id="contact" class="map">
@@ -112,13 +112,15 @@
         <small>
             <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
         </small>
-    </section>
+    </section>*/ ?>
 
-    <!-- Footer -->
+
     <footer>
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1 text-center">
+
+					 <?php /*
                     <h4><strong>Start Bootstrap</strong>
                     </h4>
                     <p>3481 Melrose Place
@@ -140,13 +142,18 @@
                             <a href="#"><i class="fa fa-dribbble fa-fw fa-3x"></i></a>
                         </li>
                     </ul>
+
                     <hr class="small">
-                    <p class="text-muted">Copyright &copy; Your Website 2014</p>
+					*/ ?>
+					
+                    <p class="text-muted">Copyright &copy; 2016</p>
                 </div>
             </div>
         </div>
         <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
     </footer>
+
+  
 
 	</div>
 

@@ -250,7 +250,7 @@ hr.small {
 /* Footer */
 
 footer {
-    padding: 100px 0;
+    padding: 10px 0;
 }
 
 #to-top {
@@ -260,6 +260,9 @@ footer {
   right: 5px;
 }
 
+#team {
+ /*margin-top: 95px;*/
+}
 
 /** The Magic **/
 .btn-breadcrumb {

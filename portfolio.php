@@ -116,7 +116,7 @@
 										<a href="/converter-valut">
 											<span>Конвертер валют</span>
 											<div class="block-img">
-												<img class="img-portfolio img-responsive" src="img/portfolio-2.jpg">
+												<img class="img-portfolio img-responsive" src="img/val.jpg">
 
 												<div class="magnifier">
 													<div class="buttons">
@@ -137,18 +137,18 @@
 
 								<div class="col-md-6 ourWork">
 									<div class="portfolio-item">
-										<a href="/calculate">
-											<span>Калькулятор</span>
+										<a href="/mat">
+											<span>Проверка строки на содержание нецензурных слов</span>
 											<div class="block-img">
 												<img class="img-portfolio img-responsive" src="img/portfolio-3.jpg">
 
 												<div class="magnifier">
 													<div class="buttons">
-														<a class="st" rel="bookmark" href="https://github.com/olyaklim/calculate">
+														<a class="st" rel="bookmark" href="https://github.com/olyaklim/mat">
 															<i class="fa fa-github livicon shadowed" aria-hidden="true"></i>
 														</a>
 
-														<a class="st" rel="bookmark" href="/calculate">
+														<a class="st" rel="bookmark" href="/mat">
 															<i class="fa fa-play livicon shadowed" aria-hidden="true"></i>
 														</a>
 													</div><!-- end buttons -->
@@ -163,7 +163,7 @@
 										<a href="/masiv">
 											<span>Массивы</span>
 											<div class="block-img">
-												<img class="img-portfolio img-responsive" src="img/portfolio-3.jpg">
+												<img class="img-portfolio img-responsive" src="img/mas.jpg">
 
 
 												<div class="magnifier">
@@ -219,7 +219,7 @@
 		</div>
 
 		<div id="my-footer">
-			footer
+			<p class="text-muted">Copyright &copy; 2016</p>
 		</div>
 	</div>
 

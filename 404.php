@@ -108,7 +108,7 @@
 			</div>
 
 			<div id="my-footer">
-				footer
+				<p class="text-muted">Copyright &copy; 2016</p>
 			</div>
 		</div>
 
