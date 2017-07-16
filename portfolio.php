@@ -53,7 +53,7 @@
 
 					<div class="phone">
 						<i class="fa fa-mobile" aria-hidden="true"></i>
-						+38(063) 95-70-712
+						+38(063) 95-90-719
 					</div>		
 
 					<a href="#my-menu" class="hamburger hamburger--emphatic">
